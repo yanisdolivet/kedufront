@@ -60,7 +60,7 @@
 }
 
 .content_recap {
-    display: none;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
@@ -301,7 +301,7 @@
 }
 
 .paiement_final {
-    display: flex;
+    display: none;
     margin: auto;
     margin-top: 5%;
     width: 70%;

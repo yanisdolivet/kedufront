@@ -113,6 +113,15 @@ function BackToMenu()
     var menu = document.getElementsByClassName('logo_header')[0];
 
     menu.onclick = function() {
+        window.location.href = "../index.html";
+    }
+}
+
+function BackToMenu_index()
+{
+    var menu = document.getElementsByClassName('logo_header')[0];
+
+    menu.onclick = function() {
         window.location.href = "index.html";
     }
 }
@@ -122,7 +131,7 @@ function BackToMenuFooterSection()
     var menu = document.getElementsByClassName('logo_header')[0];
 
     menu.onclick = function() {
-        window.location.href = "../index.html";
+        window.location.href = "../../index.html";
     }
 }
 
@@ -142,16 +151,16 @@ const OpenDescription = async () => {
             const data = response.data;
             data.forEach(data => {
                 document.getElementsByClassName('peluche_title')[data._id - 1].onclick = function () {
-                    window.location.href = "info_peluche.html" + "?_id=" + String(data._id);
+                    window.location.href = "./HTML/info_peluche.html" + "?_id=" + String(data._id);
                 }
                 document.getElementsByClassName('peluche_image')[data._id - 1].onclick = function () {
-                    window.location.href = "info_peluche.html" + "?_id=" + String(data._id);
+                    window.location.href = "./HTML/info_peluche.html" + "?_id=" + String(data._id);
                 }
                 document.getElementsByClassName('old_price')[data._id - 1].onclick = function () {
-                    window.location.href = "info_peluche.html" + "?_id=" + String(data._id);
+                    window.location.href = "./HTML/info_peluche.html" + "?_id=" + String(data._id);
                 }
                 document.getElementsByClassName('current_prce')[data._id - 1].onclick = function () {
-                    window.location.href = "info_peluche.html" + "?_id=" + String(data._id);
+                    window.location.href = "./HTML/info_peluche.html" + "?_id=" + String(data._id);
                 }
             });
         } else {
